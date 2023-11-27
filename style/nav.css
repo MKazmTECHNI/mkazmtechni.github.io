@@ -1,0 +1,38 @@
+nav > ul > li {
+  display: flex;
+}
+nav > ul {
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+nav > ul > li {
+  display: flex;
+}
+
+nav > ul > li > a[bonus-info] {
+  position: relative;
+}
+nav > ul > li > a[bonus-info] {
+  position: relative;
+}
+nav > ul > li > a[bonus-info]::after {
+  content: attr(bonus-info);
+  display: block;
+  position: absolute;
+  background-color: gray;
+  padding: 1em 3em;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.75em;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: transform ease-out 150ms, top ease-out 150ms;
+}
+
+nav > ul > li > a[bonus-info]:hover::after {
+  transform: scale(1);
+  top: 100%;
+}
