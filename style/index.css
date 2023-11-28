@@ -8,3 +8,27 @@ body > h1,
 body > h5 {
   text-align: center;
 }
+
+a[bonus-info] {
+  position: relative;
+}
+
+a[bonus-info]::after {
+  content: attr(bonus-info);
+  display: block;
+  position: absolute;
+  background-color: gray;
+  padding: 1em 3em;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.75em;
+  left: 0;
+  bottom: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
+}
+a[bonus-info]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
+}
