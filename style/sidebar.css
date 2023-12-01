@@ -12,6 +12,75 @@
   height: 0;
 }
 
+.sidebar > section > header > a {
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.145);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-left: 10px solid darkblue;
+  text-decoration: dashed;
+}
+
+.sidebar > footer > ul > li > a {
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.145);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-left: 10px solid darkblue;
+  text-decoration: dashed;
+}
+
+.sidebar > section > .person > a {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin: 0px 10px;
+  text-decoration: none;
+}
+
+.sidebar > section > .person > a[bonus-info] {
+  position: relative;
+}
+
+.sidebar > section > .person > a[bonus-info]::before {
+  content: attr(bonus-info);
+  display: block;
+  position: absolute;
+  background-color: gray;
+  padding: 1em 3em;
+  color: white;
+  border-radius: 5px;
+  font-size: 0.75em;
+  right: 0;
+  bottom: 0;
+  white-space: nowrap;
+  transform: scale(0);
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
+}
+.sidebar > section > .person > a[bonus-info]:hover::before {
+  transform: scale(1);
+  bottom: 100%;
+}
+
 .sidebar span {
   font-size: 15px;
   color: rgb(255, 255, 255);
@@ -85,4 +154,11 @@
 
 .sidebar > footer > ul > li > a:hover {
   font-size: 15px;
+}
+
+.sidebar > section > div.person {
+  display: flex;
+}
+.sidebar > section > div.person > div {
+  flex: 1;
 }

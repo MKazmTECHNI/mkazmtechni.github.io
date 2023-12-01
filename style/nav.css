@@ -1,9 +1,18 @@
-nav > ul {
-  justify-content: center;
-  display: flex;
-  justify-content: space-around;
-
-  > li {
-    display: flex;
-  }
+nav.left > a {
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.145);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-left: 10px solid darkblue;
+  text-decoration: dashed;
 }
