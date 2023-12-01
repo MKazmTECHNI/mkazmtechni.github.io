@@ -24,13 +24,6 @@ nav.left {
   padding: 20px;
   box-sizing: border-box;
   position: sticky;
-  z-index: -1;
-}
-.SideButtons {
-  transition: 0.3s;
-}
-.SideButtons:hover {
-  font-size: 15px;
 }
 
 h1 {

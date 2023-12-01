@@ -22,3 +22,11 @@ nav.left > a {
   border-left: 10px solid darkblue;
   text-decoration: dashed;
 }
+
+.SideButtons:hover {
+  font-size: 12px;
+  transition: 150ms;
+}
+.SideButtons:hover {
+  font-size: 15px;
+}
