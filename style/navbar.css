@@ -6,8 +6,6 @@
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  position: sticky;
-  top: 0px;
 }
 
 .navbar > .logo {
@@ -54,23 +52,6 @@
   font-weight: bold;
 }
 div.person > a {
-  width: 100%;
-  background-color: white;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 12px;
-  text-align: left;
-  text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-left: 10px solid darkblue;
-  text-decoration: dashed;
-
   padding: 0;
   color: rgb(255, 255, 255);
   font-weight: 600;

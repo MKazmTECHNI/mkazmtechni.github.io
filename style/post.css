@@ -20,6 +20,11 @@
 .post > div.profile > img {
   margin-right: 5px;
 }
+
+.post > div.profile > span {
+  font-weight: 900;
+}
+
 .post > div:nth-child(2) {
   margin-right: 5px;
   display: flex;
@@ -62,6 +67,7 @@
 
 .post > footer > .comment-creator > input {
   flex: 1;
+  color: aliceblue;
 }
 
 span.author {

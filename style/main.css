@@ -12,18 +12,19 @@ body {
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 20px;
+  top: 0px;
   position: sticky;
-  top: 0vh;
 }
 .page {
   display: flex;
-  height: 100vh;
 }
-nav {
+nav.left {
   width: 250px;
   background: black;
   padding: 20px;
   box-sizing: border-box;
+  position: sticky;
+  z-index: -1;
 }
 .SideButtons {
   transition: 0.3s;
