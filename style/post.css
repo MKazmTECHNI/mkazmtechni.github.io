@@ -1,0 +1,70 @@
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  align-items: center;
+}
+
+.post > div {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.post span,
+.post p {
+  font-size: 25px;
+}
+
+.post > div.profile > img {
+  margin-right: 5px;
+}
+.post > div:nth-child(2) {
+  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.post > div > span {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.post > footer > div.stat > div.comments {
+  background-color: #333;
+  border-radius: 15px;
+  border: black double 5px;
+}
+
+/* .post > footer > ` */
+
+.post > footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.post > footer > ul {
+  display: flex;
+  gap: 8px;
+}
+
+.post > footer > .stats,
+.post > footer > .description > .author {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.post > footer > .comment-creator {
+  display: flex;
+}
+
+.post > footer > .comment-creator > input {
+  flex: 1;
+}
+
+span.author {
+  font-weight: 1000;
+  text-decoration: underline;
+}

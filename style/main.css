@@ -1,0 +1,107 @@
+body {
+  min-height: 100%;
+  color: black;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0%;
+  background-color: black;
+}
+#top {
+  color: white;
+  background-color: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: sticky;
+  top: 0vh;
+}
+.page {
+  display: flex;
+  height: 100vh;
+}
+nav {
+  width: 250px;
+  background: black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.SideButtons {
+  transition: 0.3s;
+}
+.SideButtons:hover {
+  font-size: 15px;
+}
+
+h1 {
+  font-family: "Bebas Neue", cursive;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding: 0%;
+}
+a {
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.145);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-left: 10px solid darkblue;
+  text-decoration: dashed;
+}
+
+.strong {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 60px;
+}
+p {
+  margin: 5px;
+}
+.Spacers {
+  margin: 35px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  background-color: #323232;
+  width: 100%;
+  margin: 1 auto;
+  color: #ccc;
+  align-items: center;
+  padding: 30px;
+}
+
+#respond {
+  margin-top: 40px;
+}
+
+#respond input[type="text"],
+#respond input[type="email"],
+#respond textarea {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+
+  line-height: 1.4em;
+}
+
+.content > h1 {
+  font-size: 100px;
+}

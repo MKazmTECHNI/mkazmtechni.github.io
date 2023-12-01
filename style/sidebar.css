@@ -1,0 +1,88 @@
+.sidebar {
+  width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sb {
+  position: sticky;
+  top: 0;
+  height: 0;
+}
+
+.sidebar span {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin: 0px 10px;
+}
+
+.sidebar h5 {
+  font-size: 15px;
+  color: #bebebe;
+}
+
+.sidebar .person {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  margin: 10px 0px;
+}
+
+.sidebar .person > div {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .person > button {
+  transition: 150ms;
+}
+.sidebar .person > button:hover {
+  font-size: 15px;
+}
+
+.sidebar .person > div > span:last-child {
+  color: #bebebe;
+}
+
+.sidebar section > header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar button {
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.sidebar footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #757575;
+}
+
+.sidebar > footer > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 31px;
+}
+
+.sidebar > section > header > a {
+  transition: 150ms;
+}
+
+.sidebar > section > header > a:hover {
+  font-size: 15px;
+}
+
+.sidebar > footer > ul > li > a {
+  transition: 150ms;
+}
+
+.sidebar > footer > ul > li > a:hover {
+  font-size: 15px;
+}

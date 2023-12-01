@@ -18,7 +18,6 @@ input {
 }
 
 a {
-  text-decoration: none;
   color: inherit; /* Dzidziczy kolor po rodzicu */
 }
 
