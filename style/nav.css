@@ -25,6 +25,7 @@ nav.left > a {
   border: none;
   border-left: 10px solid darkblue;
   text-decoration: dashed;
+  width: 10px;
 }
 
 .SideButtons:hover {

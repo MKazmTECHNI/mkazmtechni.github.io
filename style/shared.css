@@ -26,7 +26,3 @@ img.avatar.large {
   border-radius: 50%;
   display: flex;
 }
-
-.gradient > img {
-  border: 2px solid white;
-}

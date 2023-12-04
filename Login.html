@@ -81,19 +81,20 @@
     />
     <h2>Panel administracyjny</h2>
     <p>Podaj login i hasło, aby kontynuować...</p>
-    <form>
+    <form action="./php/index.php" method="post">
       <div class="row">
         <span class="material-symbols-outlined">person</span>
-        <input type="text" placeholder="Wpisz login..." />
+        <input type="text" placeholder="Wpisz login..." name="login" />
       </div>
       <div class="row">
         <span class="material-symbols-outlined">key</span>
-        <input type="password" placeholder="Wpisz hasło..." />
+        <input type="password" placeholder="Wpisz hasło..." name="password" />
       </div>
       <div class="row">
-        <button>Zaloguj mnie</button>
+        <button type="submit">Zaloguj mnie</button>
       </div>
     </form>
-    <h1>Za rok będzie działało...</h1>
+    <h1>Niedługo będzie działało...</h1>
+    <h6>Miłosz nad tym pracuje, ok?</h6>
   </body>
 </html>

@@ -60,7 +60,6 @@
 .sidebar > section > .person > a[bonus-info] {
   position: relative;
 }
-
 .sidebar > section > .person > a[bonus-info]::before {
   content: attr(bonus-info);
   display: block;
