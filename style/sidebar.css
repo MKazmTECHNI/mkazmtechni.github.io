@@ -6,7 +6,7 @@
   gap: 5px;
   position: sticky;
   top: 75px;
-  height: 0;
+  height: 0px;
 }
 .sidebar > section > header > a {
   width: 100%;
