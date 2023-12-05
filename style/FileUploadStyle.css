@@ -1,0 +1,58 @@
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #222;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#upload-area {
+  background-color: #223;
+  text-align: center;
+  border: 2px dashed white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: 0.3s;
+}
+#upload-area:hover {
+  scale: 1.03;
+  background-color: #224;
+}
+
+h2 {
+  margin: 12px;
+}
+h4 {
+  text-transform: uppercase;
+  margin: 5px;
+}
+.material-symbols-outlined {
+  font-size: 90px;
+}
+input {
+  font-family: "Rubik", sans-serif;
+  background-color: rgb(80, 68, 137);
+  border-radius: 8px;
+}
+input::-webkit-file-upload-button {
+  font-family: "Rubik", sans-serif;
+  color: whitesmoke;
+  background-color: rgb(17, 0, 255);
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  padding: 12px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+input::-webkit-file-upload-button:hover {
+  scale: 1.1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}

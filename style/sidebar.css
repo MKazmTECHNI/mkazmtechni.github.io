@@ -4,9 +4,6 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-}
-
-.sb {
   position: sticky;
   top: 75px;
   height: 0;
@@ -21,10 +18,7 @@
   font-size: 12px;
   text-align: left;
   text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 12px 10px;
   margin-bottom: 10px;
   border: none;
   border-left: 10px solid darkblue;
