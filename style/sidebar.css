@@ -5,46 +5,19 @@
   flex-direction: column;
   gap: 5px;
   position: sticky;
-  top: 75px;
-  height: 0px;
-}
-.sidebar > section > header > a {
-  width: 100%;
-  background-color: rgb(255, 255, 255, 0.145);
-  color: white;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 12px;
-  text-align: left;
-  text-transform: uppercase;
-  padding: 12px 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-left: 10px solid darkblue;
-  text-decoration: dashed;
+  top: calc(0px + 7.5vh + 40px);
+  height: calc(100% - (7.5vh + 40px));
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.sidebar > footer > ul > li > a {
-  width: 100%;
-  background-color: rgb(255, 255, 255, 0.145);
-  color: white;
-  font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 12px;
-  text-align: left;
-  text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-left: 10px solid darkblue;
-  text-decoration: dashed;
+.sidebar > section > .person > img {
+  width: 8vh;
+  height: 8vh;
 }
 
 .sidebar > section > .person > a {
-  font-size: 15px;
+  font-size: 2vh;
   color: rgb(255, 255, 255);
   margin: 0px 10px;
   text-decoration: none;
@@ -74,13 +47,13 @@
 }
 
 .sidebar span {
-  font-size: 15px;
+  font-size: 2vh;
   color: rgb(255, 255, 255);
   margin: 0px 10px;
 }
 
-.sidebar h5 {
-  font-size: 15px;
+.sidebar > section > header > h5 {
+  font-size: 2vh;
   color: #bebebe;
 }
 
@@ -97,9 +70,13 @@
 }
 .sidebar .person > button {
   transition: 150ms;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 2vh;
 }
 .sidebar .person > button:hover {
-  font-size: 15px;
+  font-size: 2.5vh;
 }
 
 .sidebar .person > div > span:last-child {
@@ -110,12 +87,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.sidebar button {
-  padding: 0;
-  color: rgb(255, 255, 255);
-  font-weight: 600;
 }
 
 .sidebar footer {

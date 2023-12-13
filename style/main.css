@@ -4,6 +4,7 @@ body {
   font-family: Tahoma, "Nunito Sans", Verdana, sans-serif;
   padding: 0%;
   background-color: black;
+  overflow-x: hidden;
 }
 .top {
   color: white;
@@ -12,9 +13,27 @@ body {
   top: 0;
   width: 100%;
   position: sticky;
+  > header > h1 {
+    font-size: 7.5vh;
+  }
 }
+
 .page {
   display: flex;
+}
+
+.content {
+  width: 100%;
+  flex-direction: column;
+  background-color: #323232;
+  color: #ccc;
+  margin: 1 auto;
+  padding: 30px;
+  align-items: center;
+  display: flex;
+}
+.content > h1 {
+  font-size: 100px;
 }
 
 h1 {
@@ -31,24 +50,4 @@ body > h5 {
   font-weight: bold;
   font-size: 60px;
   line-height: 60px;
-}
-p {
-  margin: 5px;
-}
-.Spacers {
-  margin: 35px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  background-color: #323232;
-  width: 100%;
-  margin: 1 auto;
-  color: #ccc;
-  align-items: center;
-  padding: 30px;
-}
-.content > h1 {
-  font-size: 100px;
 }

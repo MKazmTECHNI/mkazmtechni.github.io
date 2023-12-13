@@ -1,37 +1,41 @@
 nav {
   position: sticky;
-  top: 75px;
+  top: calc(0px + 7.5vh + 40px);
   height: 0;
-  width: 250px;
+  width: 20vh;
   background: black;
-  padding: 20px;
+  padding: 2vh;
   box-sizing: border-box;
   position: sticky;
 }
 
-nav.left > a {
+nav.left > ul > li {
+  margin-bottom: 1.2vh;
+  display: flex;
+  flex: 1;
+}
+
+nav.left > ul > li > a {
+  width: 100%;
   background-color: rgb(255, 255, 255, 0.145);
+  border: none;
   color: white;
   font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 12px;
+  border-left: 1.5vh solid darkblue;
+  text-decoration: dashed;
+  letter-spacing: 0.2vh;
+  font-size: 2vh;
   text-align: left;
   text-transform: uppercase;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-left: 10px solid darkblue;
-  text-decoration: dashed;
-  width: 10px;
+  padding: 2vh 1.5vh;
 }
 
 .SideButtons:hover {
-  font-size: 12px;
+  font-size: 2.5vh;
   transition: 150ms;
 }
-.SideButtons:hover {
-  font-size: 15px;
+
+nav.left > small {
+  color: #e5e5e5;
+  font-size: 1.5vh;
 }

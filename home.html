@@ -30,12 +30,21 @@
     </div>
     <div class="page">
       <nav class="left">
-        <a href="./Login.html" class="SideButtons">Zaloguj</a>
-        <p class="Spacers"></p>
-        <a href="./FileUpload.html" class="SideButtons">Dodaj</a>
-        <p class="Spacers"></p>
-        <a href="https://technischools.com" class="SideButtons">Kontakt</a>
-        <p class="Spacers"></p>
+        <ul>
+          <li>
+            <a href="./Login.html" class="SideButtons">Zaloguj</a>
+          </li>
+          <li href="./PostUpload.html">
+            <a href="./" class="SideButtons">Dodaj</a>
+          </li>
+          <li>
+            <a href="https://technischools.com"><small>Pomoc</small></a>
+          </li>
+          <li>
+            <a href="./rules.html"><small>Zasady</small></a>
+          </li>
+        </ul>
+        <small class="copyright">(C) 2023 Technigram from MKazm</small>
       </nav>
       <div class="content">
         <h1>Witaj z Powrotem!</h1>
@@ -50,7 +59,7 @@
           </div>
           <div>
             <p class="text">Witam na TECHNIGRAM, w wersji pre-release!</p>
-            <h1 style="margin: 10vh; font-size: 10vh; text-align: center">
+            <h1 style="margin: 10px; font-size: 70px; text-align: center">
               TECHNIGRAM v0.1.4
             </h1>
             <p>Zmiany:</p>
@@ -72,6 +81,34 @@
             </div>
           </footer>
         </div>
+        <h2>A tutaj posty wasze posty:</h2>
+        <div class="post">
+          <div class="profile">
+            <img src="./assets/saqrezz.png" alt="" class="avatar medium" />
+            <span>SaQreeZ</span>
+          </div>
+          <div>
+            <p class="text">
+              Stworzyłem prostą grę w Scratchu, inspirowaną Asteroids
+            </p>
+            <img src="./assets/scrath.jpg" alt="scratch" />
+          </div>
+          <footer>
+            <div class="stat">
+              <span>Liczba polubień:</span>
+              <span>yes</span>
+              <div class="comments">
+                <p class="description">
+                  <span class="author">MKazm: </span>Brawo (Nie zwracajcie uwagi
+                  na liczbę polubień) #HateNaDaniela
+                </p>
+                <div class="comment-creator">
+                  <input type="text" placeholder="Napisz komentarz..." />
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
       </div>
       <aside class="sidebar">
         <section>
@@ -85,8 +122,7 @@
         </section>
         <section>
           <header>
-            <h5>Dla Ciebie</h5>
-            <a href="#"><small>Zobacz wszystkich</small></a>
+            <h5>Uczniowie</h5>
           </header>
           <div class="person">
             <img src="./assets/skiden.png" alt="" class="avatar medium" />
@@ -151,20 +187,6 @@
             <button>Więcej</button>
           </div>
         </section>
-        <footer>
-          <ul>
-            <li>
-              <a href="./rules.html"><small>Informacje</small></a>
-            </li>
-            <li>
-              <a href="https://technischools.com"><small>Pomoc</small></a>
-            </li>
-            <li>
-              <a href="./rules.html"><small>Zasady</small></a>
-            </li>
-          </ul>
-          <small class="copyright">(C) 2023 PhrasePad from MKazm</small>
-        </footer>
       </aside>
     </div>
   </body>
