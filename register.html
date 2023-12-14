@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0 "
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com " />
+    <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap "
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style/LoginStyle.css" />
+  </head>
+  <body>
+    <a id="Return" href="./home.html">Wróć</a>
+    <img
+      id="logo"
+      src="https://yt3.ggpht.com/QelZkTNcxp6nFiHrcYsNfgsLxbFUbUD6AxshDky1zms8_xZQf66_oOvhSgULwn_x5zbR_gFS3g=s68-c-k-c0x00ffffff-no-rj"
+    />
+    <h2>Panel rejestracji</h2>
+    <p>Podaj login, email i hasło, aby kontynuować...</p>
+
+    <form id="registrationForm">
+      <input
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Nazwa użytkownika..."
+        required
+      />
+      <input type="email" id="email" name="email" placeholder="Email..." />
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Hasło..."
+        required
+      />
+      <input
+        type="password"
+        id="repeatPassword"
+        name="repeatPassword"
+        placeholder="Powtórz Hasło..."
+        required
+      />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p>Masz już konto?</p>
+    <a href="./register.html">Zaloguj się!</a>
+    <!-- Display response message here -->
+    <p id="responseMessage"></p>
+    <h1>Jeśli mi do końca nie ufasz, nie wpisuj swoich typowych haseł.</h1>
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const form = event.target;
+          const username = event.target.username.value;
+          const email = event.target.email.value;
+          const password = event.target.password.value;
+
+          try {
+            const response = await fetch("http://localhost:8080/register", {
+              method: "POST",
+              body: JSON.stringify({
+                username,
+                email,
+                password,
+              }),
+              headers: {
+                "Content-Type": "application/json",
+              },
+            });
+
+            const data = await response.json();
+            const responseMessageElement =
+              document.getElementById("responseMessage");
+            responseMessageElement.textContent = data.message;
+
+            // Clear the form
+            // form.reset();
+          } catch (error) {
+            console.error("Error during registration:", error);
+          }
+        });
+    </script>
+  </body>
+</html>
