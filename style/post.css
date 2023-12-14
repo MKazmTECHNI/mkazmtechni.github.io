@@ -66,8 +66,8 @@
 }
 
 .post > footer > .comment-creator > input {
+  display: flex;
   flex: 1;
-  color: aliceblue;
 }
 
 span.author {

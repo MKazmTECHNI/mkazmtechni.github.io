@@ -19,7 +19,6 @@ nav.left > ul > li > a {
   width: 100%;
   background-color: rgb(255, 255, 255, 0.145);
   border: none;
-  color: white;
   font-weight: bold;
   border-left: 1.5vh solid darkblue;
   text-decoration: dashed;
@@ -36,6 +35,5 @@ nav.left > ul > li > a {
 }
 
 nav.left > small {
-  color: #e5e5e5;
   font-size: 1.5vh;
 }

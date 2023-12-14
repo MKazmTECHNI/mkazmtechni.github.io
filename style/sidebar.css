@@ -18,7 +18,6 @@
 
 .sidebar > section > .person > a {
   font-size: 2vh;
-  color: rgb(255, 255, 255);
   margin: 0px 10px;
   text-decoration: none;
 }
@@ -32,7 +31,6 @@
   position: absolute;
   background-color: gray;
   padding: 1em 3em;
-  color: white;
   border-radius: 5px;
   font-size: 0.75em;
   right: 0;
@@ -48,13 +46,11 @@
 
 .sidebar span {
   font-size: 2vh;
-  color: rgb(255, 255, 255);
   margin: 0px 10px;
 }
 
 .sidebar > section > header > h5 {
   font-size: 2vh;
-  color: #bebebe;
 }
 
 .sidebar .person {
@@ -71,16 +67,11 @@
 .sidebar .person > button {
   transition: 150ms;
   padding: 0;
-  color: rgb(255, 255, 255);
   font-weight: 600;
   font-size: 2vh;
 }
 .sidebar .person > button:hover {
   font-size: 2.5vh;
-}
-
-.sidebar .person > div > span:last-child {
-  color: #bebebe;
 }
 
 .sidebar section > header {

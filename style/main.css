@@ -1,13 +1,12 @@
 body {
   min-height: 100%;
-  color: black;
   font-family: Tahoma, "Nunito Sans", Verdana, sans-serif;
   padding: 0%;
+  color: #fbfbfb;
   background-color: black;
   overflow-x: hidden;
 }
 .top {
-  color: white;
   background-color: #000000;
   padding: 15px 20px;
   top: 0;
@@ -23,10 +22,8 @@ body {
 }
 
 .content {
-  width: 100%;
   flex-direction: column;
   background-color: #323232;
-  color: #ccc;
   margin: 1 auto;
   padding: 30px;
   align-items: center;
