@@ -8,13 +8,12 @@ body {
   flex-direction: column;
 }
 #upload-area {
+  display: flex;
+  flex-direction: column;
   background-color: #223;
   text-align: center;
   border: 2px dashed white;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 40px 50px;
   transition: 0.3s;
 }
 #upload-area:hover {
@@ -36,6 +35,7 @@ input {
   font-family: "Rubik", sans-serif;
   background-color: rgb(80, 68, 137);
   border-radius: 8px;
+  width: auto;
 }
 input::-webkit-file-upload-button {
   font-family: "Rubik", sans-serif;
