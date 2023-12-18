@@ -28,6 +28,7 @@ body {
   padding: 30px;
   align-items: center;
   display: flex;
+  gap: 25px;
 }
 .content > h1 {
   font-size: 100px;

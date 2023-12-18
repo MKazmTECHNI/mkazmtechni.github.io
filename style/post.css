@@ -4,6 +4,8 @@
   flex-direction: column;
   background-color: #222;
   align-items: center;
+  gap: 5px;
+  padding: 12px;
 }
 
 .post > div {
@@ -39,10 +41,9 @@
 .post > footer > div.stat > div.comments {
   background-color: #333;
   border-radius: 15px;
-  border: black double 5px;
+  padding: 5px 15px;
+  font-size: 25px;
 }
-
-/* .post > footer > ` */
 
 .post > footer {
   display: flex;
@@ -61,13 +62,15 @@
   margin-right: 5px;
 }
 
-.post > footer > .comment-creator {
-  display: flex;
-}
-
 .post > footer > .comment-creator > input {
   display: flex;
   flex: 1;
+  font-size: 25px;
+  background-color: #444;
+}
+
+.post > footer > .comment-creator {
+  display: flex;
 }
 
 span.author {

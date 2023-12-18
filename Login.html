@@ -17,43 +17,45 @@
     <link rel="stylesheet" href="./style/LoginStyle.css" />
   </head>
   <body>
-    <a id="Return" href="./index.html">Wróć</a>
-    <img
-      id="logo"
-      src="https://yt3.ggpht.com/QelZkTNcxp6nFiHrcYsNfgsLxbFUbUD6AxshDky1zms8_xZQf66_oOvhSgULwn_x5zbR_gFS3g=s68-c-k-c0x00ffffff-no-rj"
-    />
-    <h2>Panel logowania</h2>
-    <p>Podaj login, email i hasło, aby kontynuować...</p>
+    <div class="content">
+      <a id="Return" href="./index.html">Wróć</a>
+      <img
+        id="logo"
+        src="https://yt3.ggpht.com/QelZkTNcxp6nFiHrcYsNfgsLxbFUbUD6AxshDky1zms8_xZQf66_oOvhSgULwn_x5zbR_gFS3g=s68-c-k-c0x00ffffff-no-rj"
+      />
+      <h2>Panel logowania</h2>
+      <p>Podaj login, email i hasło, aby kontynuować...</p>
 
-    <form id="loginForm" method="post">
-      <input
-        type="text"
-        id="username"
-        name="username"
-        placeholder="username"
-        required
-      />
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="email"
-        required
-      />
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="password"
-        required
-      />
-      <button type="submit">Login</button>
-    </form>
-    <p>Masz już konto?</p>
-    <a href="./register.html">Zarejestuj się już teraz!</a>
-    <!-- Display response message here -->
-    <p id="responseMessage"></p>
-    <h2>I to działa, okej? Nic nie zmienia ale działa</h2>
+      <form id="loginForm" method="post">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="email"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+      <p>Masz już konto?</p>
+      <a href="./register.html">Zarejestuj się już teraz!</a>
+      <!-- Display response message here -->
+      <p id="responseMessage"></p>
+      <h2>I to działa, okej? Nic nie zmienia ale działa</h2>
+    </div>
     <script>
       document
         .getElementById("loginForm")

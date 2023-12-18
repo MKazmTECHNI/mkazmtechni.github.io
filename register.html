@@ -17,46 +17,48 @@
     <link rel="stylesheet" href="./style/LoginStyle.css" />
   </head>
   <body>
-    <a id="Return" href="./index.html">Wróć</a>
-    <img
-      id="logo"
-      src="https://yt3.ggpht.com/QelZkTNcxp6nFiHrcYsNfgsLxbFUbUD6AxshDky1zms8_xZQf66_oOvhSgULwn_x5zbR_gFS3g=s68-c-k-c0x00ffffff-no-rj"
-    />
-    <h2>Panel rejestracji</h2>
-    <p>Podaj login, email i hasło, aby kontynuować...</p>
-
-    <form id="registrationForm">
-      <input
-        type="text"
-        id="username"
-        name="username"
-        placeholder="Nazwa użytkownika..."
-        required
+    <div class="content">
+      <a id="Return" href="./index.html">Wróć</a>
+      <img
+        id="logo"
+        src="https://yt3.ggpht.com/QelZkTNcxp6nFiHrcYsNfgsLxbFUbUD6AxshDky1zms8_xZQf66_oOvhSgULwn_x5zbR_gFS3g=s68-c-k-c0x00ffffff-no-rj"
       />
-      <input type="email" id="email" name="email" placeholder="Email..." />
-      <input
-        type="password"
-        id="password"
-        name="password"
-        placeholder="Hasło..."
-        required
-      />
-      <input
-        type="password"
-        id="repeatPassword"
-        name="repeatPassword"
-        placeholder="Powtórz Hasło..."
-        required
-      />
+      <h2>Panel rejestracji</h2>
+      <p>Podaj login, email i hasło, aby kontynuować...</p>
 
-      <button type="submit">Register</button>
-    </form>
+      <form id="registrationForm">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Nazwa użytkownika..."
+          required
+        />
+        <input type="email" id="email" name="email" placeholder="Email..." />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Hasło..."
+          required
+        />
+        <input
+          type="password"
+          id="repeatPassword"
+          name="repeatPassword"
+          placeholder="Powtórz Hasło..."
+          required
+        />
 
-    <p>Masz już konto?</p>
-    <a href="./Login.html">Zaloguj się!</a>
-    <!-- Display response message here -->
-    <p id="responseMessage"></p>
-    <h1>Jeśli mi do końca nie ufasz, nie wpisuj swoich typowych haseł.</h1>
+        <button type="submit">Register</button>
+      </form>
+
+      <p>Masz już konto?</p>
+      <a href="./Login.html">Zaloguj się!</a>
+      <!-- Display response message here -->
+      <p id="responseMessage"></p>
+      <h1>Jeśli mi do końca nie ufasz, nie wpisuj swoich typowych haseł.</h1>
+    </div>
     <script>
       document
         .getElementById("registrationForm")
