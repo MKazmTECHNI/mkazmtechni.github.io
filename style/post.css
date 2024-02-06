@@ -1,17 +1,27 @@
+:root {
+  --background-color: rgb(22, 22, 22);
+}
+
 .post {
-  width: 100%;
+  background: var(--background-color);
+  padding: 3vh;
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  background-color: #222;
-  align-items: center;
   gap: 5px;
-  padding: 12px;
+  align-items: center;
 }
 
 .post > div {
   margin: 10px;
   display: flex;
+  flex-direction: column;
+}
+.post > div:first-child {
+  margin: 10px;
+  display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .post span,
@@ -23,37 +33,14 @@
   margin-right: 5px;
 }
 
-.post > div.profile > span {
-  font-weight: 900;
-}
-
-.post > div:nth-child(2) {
-  margin-right: 5px;
-  display: flex;
-  flex-direction: column;
-}
-.post > div > span {
-  display: flex;
-  align-items: center;
-  margin-left: 5px;
-}
-
-.post > footer > div.stat > div.comments {
-  background-color: #333;
+.post > footer > div.comments {
+  background-color: #222;
   border-radius: 15px;
   padding: 5px 15px;
   font-size: 25px;
-}
-
-.post > footer {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-}
-
-.post > footer > ul {
-  display: flex;
-  gap: 8px;
+  gap: 7px;
 }
 
 .post > footer > .stats,
@@ -62,18 +49,17 @@
   margin-right: 5px;
 }
 
-.post > footer > .comment-creator > input {
+.post > footer > .comments > .comment-creator > input {
+  padding: 5px 15px;
   display: flex;
   flex: 1;
   font-size: 25px;
-  background-color: #444;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 100px;
+  color: #fff;
 }
-
-.post > footer > .comment-creator {
-  display: flex;
-}
-
 span.author {
-  font-weight: 1000;
+  font-weight: 600;
   text-decoration: underline;
 }
