@@ -1,0 +1,9 @@
+form#loginForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+button {
+  align-self: center;
+  color: white;
+  background: rgb(69, 69, 69);
+}
